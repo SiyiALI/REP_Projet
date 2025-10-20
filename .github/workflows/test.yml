@@ -22,3 +22,4 @@ jobs:
         
       - name: Exécuter le script BankingProblem/MainBanking.py
         run: python BankingProblem/MainBanking.py
+
