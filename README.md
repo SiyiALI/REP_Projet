@@ -15,3 +15,4 @@
 - Utilisation d'une bibliothèque de grands nombres (précision arbitraire)
 - Architecture du processeur
 - Type de données des langages de programmation
+- L'intervalle choisi pour la génération des nombres
