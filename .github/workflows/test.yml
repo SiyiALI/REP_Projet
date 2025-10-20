@@ -14,5 +14,5 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Exécuter le script assoc.py
+      - name: Exécuter le script main.py
         run: python main.py
