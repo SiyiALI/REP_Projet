@@ -18,5 +18,5 @@ jobs:
         run: pip install jinja2
 
       - name: Générer et exécuter les variantes Banking par Jinja
-        run: python3 Bankingproblem/generate_banking.py
+        run: python3 BankingProblem/generate_banking.py
 
