@@ -1,10 +1,11 @@
 import random
+import numpy as np
 t=0
 def tp():
   global t
-  x = random.random()
-  y = random.random()
-  z = random.random()
+  x = np.float32(random.random())
+  y = np.float32(random.random())
+  z = np.float32(random.random())
   if (x+y)+z!=x+(y+z):
   #if abs((x+y)+z)-(x+(y+z)) >= 0.000000000000001:
     #print(f"False: {x}, {y}, {z}")
