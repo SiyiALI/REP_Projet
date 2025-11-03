@@ -1,9 +1,7 @@
 from decimal import Decimal, getcontext
 import math
 
-getcontext().prec = 80
-
-def compute_e_decimal(terms=200):
+def compute_e_decimal(terms):
     e = Decimal(0)
     fact = Decimal(1)
     for k in range(0, terms):
@@ -29,17 +27,23 @@ def closed_form(A0, n):
     A_n = fact_n * (Decimal(A0) - partial)
     return A_n - Decimal(1)
 
-# Parameters
-method = "closed_form"
-n = 50
-terms = 200
+def banking(precision, method, terms, n):
+    getcontext().prec = precision
 
-if method == "iterative":
     e_val = compute_e_decimal(terms)
-    result = iterative_process(e_val, n)
-else:
-    e_val = compute_e_decimal(terms)
-    result = closed_form(e_val, n)
+    
+    if method == "iterative":
+        return iterative_process(e_val, n) - 1 # for retrieval fee
+    else:
+        return closed_form(e_val, n) - 1 # for retrieval fee
 
-print(f"Precision = 80, Terms = 200, Method = closed_form, n = 50")
-print(f"Final result ≈ {result}")
+if __name__ == "__main__":
+    n = 50
+    e = compute_e_decimal(terms=200)
+
+    after_n_iterations = iterative_process(e, n)
+
+    print("Method: iterative")
+    print(f"Initial {e=}")
+    print(f"After {n=} years (before retrieval fee): A_n ≈ {after_n_iterations}")
+    print(f"After paying final €1 retrieval fee: final ≈ {after_n_iterations - 1}")
