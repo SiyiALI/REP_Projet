@@ -15,7 +15,7 @@ jobs:
           python-version: "3.12"
 
       - name: generate py files
-        run: python jinja_call.py
+        run: python ./jinja_call.py
 
       - name: init CSV header
         run: echo "repetitions,op1,op2,result" > results_associativity.csv
