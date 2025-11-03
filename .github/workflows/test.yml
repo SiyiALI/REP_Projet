@@ -1,0 +1,25 @@
+name: test-associative-property
+
+on: [push, pull_request]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Exécuter le script main.py
+        run: python main.py
+        
+      - name: Afficher le contenu du résultat
+        run: cat answer_associativity.txt
+        
+      - name: Exécuter le script BankingProblem/MainBanking.py
+        run: python BankingProblem/MainBanking.py
+
