@@ -8,7 +8,7 @@
 
 ## TP3
 
-### Facteurs impactant l'évaluation de (x+y)+z == x+(y+z)
+### Facteurs impactant l'évaluation des propriétés mathématiques sur les flottants
 
 - Précision limitée des flottants
 - Manière de comparer les flottants (`a==b`, `abs(a-b) <= 0.001`)
