@@ -1,5 +1,6 @@
 
 import random
+import csv
 
 t = 0
 
@@ -14,6 +15,8 @@ def check_property():
 
 check_property()
 
-with open("result.txt", "w") as f:
-    f.write(f"Violation rate: {t}/{{ repetitions }}")
+result_value = t / {{ repetitions }}
 
+with open("results_associativity.csv", "a", newline="") as f:
+    writer = csv.writer(f)
+    writer.writerow([{{ repetitions }}, "{{ operation1 }}", "{{ operation2 }}", result_value])
