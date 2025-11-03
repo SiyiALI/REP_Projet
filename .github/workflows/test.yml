@@ -14,13 +14,9 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: show jinja output / error
+      - name: run jinja
         run: |
-          python ./jinja_call.py || echo "jinja_call FAILED with status $?"
-
-
-      - name: list files
-        run: ls -al
+          python ./jinja_call.py 
 
       - name: Exécuter les scripts du problème "the associative property" 
         run: |
