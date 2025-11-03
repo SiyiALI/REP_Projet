@@ -1,10 +1,10 @@
 import random, csv, os
 
-REPS = 1000
-OP1  = "(x + y) + z"
-OP2  = "x + (y + z)"
+REPS = 10000
+OP1  = "x + y"
+OP2  = "y + x"
 DTYPE = "float64"
-DIST  = "uniform_signed"
+DIST  = "wide"
 SEED  = 0
 
 def gen_value(rng):

@@ -1,9 +1,9 @@
 import random, csv, os
 
-REPS = 1000
-OP1  = "(x + y) + z"
-OP2  = "x + (y + z)"
-DTYPE = "float64"
+REPS = 5000
+OP1  = "(x * y) * z"
+OP2  = "x * (y * z)"
+DTYPE = "float32"
 DIST  = "uniform_signed"
 SEED  = 0
 

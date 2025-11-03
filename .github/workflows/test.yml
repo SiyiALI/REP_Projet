@@ -15,13 +15,13 @@ jobs:
           python-version: "3.12"
           
       - name: install jinja2
-        run: pip install jinja2
+        run: pip install numpy jinja2
 
       - name: generate py files
         run: python ./jinja_call.py
 
       - name: init CSV header
-        run: echo "repetitions,op1,op2,result" > results_associativity.csv
+        run: echo "repetitions,op1,op2,dtype,dist,seed,result" > results_associativity.csv
 
       - name: Exécuter les scripts du problème "the associative property" 
         run: |
