@@ -12,7 +12,7 @@ with open("results_banking.csv", "w", newline="") as csv_file:
     writer = csv.DictWriter(csv_file, fieldnames=["precision", "terms", "method", "n", "result"])
 
     writer.writeheader()
-    for factor_set in factor_set:
+    for factor_set in factors:
         result = banking_algorithm.banking(
             factor_set["precision"],
             factor_set["method"],
