@@ -15,18 +15,19 @@ jobs:
       - name: generate files
         run: python generate_files.py
 
-      - name: init CSV header
+      - name: init CSV
         run: echo "repetitions,op1,op2,result" > results_associativity.csv
+
+      - name: show generated files content
+        run: |
+          for f in generated_property_check_*.py; do
+            echo "================= $f ================="
+            cat "$f"
+            echo
+          done
 
       - name: run generated tests
         run: |
           for f in generated_property_check_*.py; do
             python "$f"
           done
-
-      - run: cat results_associativity.csv
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: results-associativity
-          path: results_associativity.csv
