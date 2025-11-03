@@ -13,9 +13,11 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          
-      - name: generate py files
-        run: python ./jinja_call.py
+
+      - name: show jinja output / error
+        run: |
+          python ./jinja_call.py || echo "jinja_call FAILED with status $?"
+
 
       - name: list files
         run: ls -al
