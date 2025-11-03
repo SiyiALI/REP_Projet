@@ -14,26 +14,24 @@ jobs:
         with:
           python-version: "3.12"
           
+      - name: install jinja2
+        run: pip install jinja2
+
       - name: generate py files
         run: python ./jinja_call.py
 
       - name: init CSV header
         run: echo "repetitions,op1,op2,dtype,dist,seed,result" > results_associativity.csv
 
-      - name: run generated tests
+      - name: Exécuter les scripts du problème "the associative property" 
         run: |
           for f in generated_property_check_*.py; do
             python "$f"
           done
 
-      - name: show csv (head/tail)
-        run: |
-          sed -n '1,20p' results_associativity.csv
-          echo "--- tail ---"
-          tail -n 10 results_associativity.csv
-
-      - uses: actions/upload-artifact@v4
+      - name: Upload CSV artifact
+        uses: actions/upload-artifact@v4
         with:
-          name: results-associativity
+          name: results associativity
           path: results_associativity.csv
-          
+

@@ -4,7 +4,7 @@ REPS = 1000
 OP1  = "(x + y) + z"
 OP2  = "x + (y + z)"
 DTYPE = "float64"
-DIST  = "uniform_signed"
+DIST  = "wide"
 SEED  = 0
 
 def gen_value(rng):

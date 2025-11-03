@@ -1,11 +1,11 @@
 import random, csv, os
 
-REPS = 1000
-OP1  = "(x + y) + z"
-OP2  = "x + (y + z)"
+REPS = 5000
+OP1  = "(x * y) * z"
+OP2  = "x * (y * z)"
 DTYPE = "float64"
-DIST  = "uniform_signed"
-SEED  = 0
+DIST  = "wide"
+SEED  = 1
 
 def gen_value(rng):
     if DIST == "uniform01":
