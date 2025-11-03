@@ -1,6 +1,5 @@
 from decimal import Decimal, getcontext
 
-# Increase precision to avoid round-off issues with factorials
 getcontext().prec = 120
 
 def compute_e_decimal(terms=200):
