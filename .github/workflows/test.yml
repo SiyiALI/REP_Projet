@@ -15,7 +15,7 @@ jobs:
           python-version: "3.12"
           
       - name: install jinja2
-        run: pip install jinja2
+        run: pip install numpy jinja2
 
       - name: generate py files
         run: python ./jinja_call.py
