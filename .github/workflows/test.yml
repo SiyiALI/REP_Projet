@@ -6,15 +6,13 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout du dépôt
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Installer Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: generate py files
+      - name: generate files
         run: python generate_files.py
 
       - name: init CSV header
@@ -26,11 +24,9 @@ jobs:
             python "$f"
           done
 
-      - name: debug show csv
-        run: cat results_associativity.csv
+      - run: cat results_associativity.csv
 
-      - name: Upload CSV artifact
-        uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         with:
           name: results-associativity
           path: results_associativity.csv
