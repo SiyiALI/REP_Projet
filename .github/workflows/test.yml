@@ -13,24 +13,22 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
+          
       - name: generate py files
         run: python ./jinja_call.py
 
-      - name: init CSV header
-        run: echo "repetitions,op1,op2,result" > results_associativity.csv
+      - name: list files
+        run: ls -al
 
-      - name: run generated tests
+      - name: Exécuter les scripts du problème "the associative property" 
         run: |
           for f in generated_property_check_*.py; do
             python "$f"
           done
 
-      - name: debug show csv
-        run: cat results_associativity.csv
-
       - name: Upload CSV artifact
         uses: actions/upload-artifact@v4
         with:
-          name: results-associativity
+          name: results associativity
           path: results_associativity.csv
+
