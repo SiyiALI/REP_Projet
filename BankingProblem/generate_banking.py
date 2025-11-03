@@ -3,7 +3,7 @@ import os
 
 env = Environment(loader=FileSystemLoader("."))
 
-template = env.get_template("banking_template.py.jinja")
+template = env.get_template("BankingProblem/banking_template.py.jinja")
 
 # Différentes combinaisons de facteurs
 factors = [
