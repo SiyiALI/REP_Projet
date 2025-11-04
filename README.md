@@ -16,3 +16,37 @@
 - Architecture du processeur
 - Type de données des langages de programmation
 - L'intervalle choisi pour la génération des nombres
+
+## Structure des dossiers
+```bash
+#Branchs
+Branch 
+ ├─ main
+ ├─ use_float32            
+ └─ solution2         
+
+
+REP_Projet/
+ ├─ .github/workflows/
+ |    ├─ test.yml
+ |    └─ banking.yml          
+ ├─ BankingProblem/
+ |    ├─ banking_cli_laucher.py
+ |    ├─ banking_cli.py
+ |    ├─ banking_template.py.jinja
+ |    ├─ generate_banking_0.py
+ |    ├─ ......
+ |    ├─ generate_banking_2.py
+ |    └─ MainBanking.py           
+ ├─ AssociativeProblem/
+ |    ├─ generated_property_check_0.py
+ |    ├─ ......
+ |    ├─ generated_property_check_53.py
+ |    ├─ jinja_call.py
+ |    ├─ main_cli_laucher.py
+ |    ├─ main_cli.py
+ |    ├─ main.py
+ |    └─ property_template.py.jinja
+ ├─ .gitignore
+ ├─ README.md
+ └─ Result_Analyse.ipynb           
