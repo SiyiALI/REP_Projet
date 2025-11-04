@@ -1,29 +1,29 @@
-# Reproductibilité
+# Reproducibility
 
-## Instructions d'installation et d'exécution
-- Télécharger et installer Python 3.14 depuis [ce lien](https://www.python.org/downloads/release/python-3140/) pour Windows, ou depuis votre package manager pour Linux / MacOS. Nous avons utilisé CPython.
-- Cloner ce dépôt
-- Lancer le script avec la commande `python.exe main.py` (Windows)
-- Le résultat est à peu près entre 0.8 et 0.85
+## Installation & execution instructions
+- Download and install Python 3.14 from [this link](https://www.python.org/downloads/release/python-3140/) for Windows, or via your package manager on Linux / macOS. We used CPython.
+- Clone this repository
+- Run the script with `python.exe main.py` (on Windows)
+- The result is approximately between 0.8 and 0.85
 
 ## TP3
 
-### Facteurs impactant l'évaluation des propriétés mathématiques sur les flottants
+### Factors that influence the evaluation of mathematical properties on floating-point numbers
 
-- Précision limitée des flottants
-- Manière de comparer les flottants (`a==b`, `abs(a-b) <= 0.001`)
-- Utilisation d'une bibliothèque de grands nombres (précision arbitraire)
-- Architecture du processeur
-- Type de données des langages de programmation
-- L'intervalle choisi pour la génération des nombres
+- Limited precision of floating-point formats
+- The way floating points are compared (`a == b`, `abs(a-b) <= 0.001`)
+- Use of arbitrary precision / big number libraries
+- CPU / processor architecture
+- Programming language data types
+- The numeric interval selected for the value generation
 
 ## Structure des dossiers
 ```bash
 #Branchs
 Branch 
  ├─ main
- ├─ use_float32            
- └─ solution2         
+ ├─ Associativity_solution2  # change in main.py            
+ └─ Banking_solution2        # change in BankingProblem/MainBanking.py   
 
 
 REP_Projet/
