@@ -9,6 +9,9 @@ jobs:
       - name: Repository checkout
         uses: actions/checkout@v4
 
+      - name: Install numpy
+        run: python3 -m pip install numpy
+
       - name: Generate the CSV
         run: python3 associativity/generate_csv.py
 
