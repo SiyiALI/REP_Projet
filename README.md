@@ -1,39 +1,49 @@
 # Reproducibility
 
-## Structure des dossiers
+This project uses Python 3.14 (CPython).
+
+## Branchs
 ```bash
-#Branchs
+
 Branch 
  ├─ main
- ├─ Associativity_solution2  # change in main.py            
- └─ Banking_solution2        # change in BankingProblem/MainBanking.py   
+ ├─ Associativity_solution2    # change in main.py            
+ └─ Banking_solution2          # change in BankingProblem/MainBanking.py   
 
+```
+
+## Folder structure
+```bash
 
 REP_Projet/
- ├─ .github/workflows/
- |    ├─ associativity.yml
- |    └─ banking.yml          
- ├─ banking_problem/
- |    ├─ banking_algorithm.py
- |    ├─ banking_cli_laucher.py
- |    ├─ banking_cli.py
- |    ├─ banking_template.py.jinja
- |    ├─ generate_csv.py
- |    ├─ jinja_call.py
- |    └─ results_banking.csv
- ├─ associativity/
- |    ├─ associativity_cli_launcher.py
- |    ├─ associativity_cli.py
- |    ├─ associativity_template.py.jinja
- |    ├─ generate_csv.py
- |    ├─ jinja_call.py
- |    ├─ repository_scanner.py
- |    ├─ results_associativity.csv
- |    └─ tp1.py 
- ├─ .gitignore
- ├─ answer_associativity.py
- ├─ Dockerfile
- ├─ nixpkgs-pin.nix
- ├─ README.md
- ├─ Result_Analyse.ipynb           
- └─ shell.nix
+ ├─ .github/workflows/                   # CI pipelines (GitHub Actions)
+ │    ├─ associativity.yml               # CI that runs the associativity computations
+ │    └─ banking.yml                     # CI that runs the banking computations
+ │
+ ├─ banking_problem/                     # banking algorithm + CLI + CSV generation
+ │    ├─ banking_algorithm.py            # prototype / first version of the banking problem code
+ │    ├─ banking_cli_laucher.py          # entry point wrapper to launch the CLI
+ │    ├─ banking_cli.py                  # argument parsing / CLI interface
+ │    ├─ banking_template.py.jinja       # Jinja template for code / output generation
+ │    ├─ generate_csv.py                 # runs experiments and writes a CSV
+ │    └─ jinja_call.py                   # helpers to call Jinja templates
+ │
+ ├─ associativity/                       # associativity experiment + CLI + CSV generation
+ │    ├─ associativity_cli_launcher.py   # entry point wrapper to launch the CLI
+ │    ├─ associativity_cli.py            # argument parsing / CLI interface
+ │    ├─ associativity_template.py.jinja # Jinja template for the associativity study
+ │    ├─ generate_csv.py                 # runs experiments and writes a CSV
+ │    ├─ jinja_call.py                   # helpers to call Jinja templates
+ │    ├─ repository_scanner.py           # scans directories / repositories for analysis
+ │    ├─ results_associativity.csv       # precomputed results
+ │    └─ tp1.py                          # prototype / first version of the associativity code
+ │
+ ├─ .gitignore                           # ignore rules
+ ├─ answer_associativity.py              # standalone script with the associativity result
+ ├─ Dockerfile                           # containerised execution environment
+ ├─ nixpkgs-pin.nix                      # pinned version for reproducible Nix environment
+ ├─ README.md                            # this documentation file
+ ├─ Result_Analyse.ipynb                 # Jupyter notebook for analysis / plots
+ └─ shell.nix                            # development environment (Nix shell)
+
+```
