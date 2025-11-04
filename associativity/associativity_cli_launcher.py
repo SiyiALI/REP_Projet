@@ -10,4 +10,4 @@ operations = [
 ]
 
 for (min, max, steps) in operations:
-    subprocess.run(["python3", "main_cli.py", "--min", str(min), "--max", str(max), "--steps", str(steps)])
+    subprocess.run(["python3", "associativity_cli.py", "--min", str(min), "--max", str(max), "--steps", str(steps)])

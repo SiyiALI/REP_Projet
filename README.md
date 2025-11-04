@@ -1,9 +1,9 @@
 # Reproductibilité
 
 ## Instructions d'installation et d'exécution
-- Télécharger et installer Python 3.14 depuis [ce lien](https://www.python.org/downloads/release/python-3140/)
+- Télécharger et installer Python 3.14 depuis [ce lien](https://www.python.org/downloads/release/python-3140/) pour Windows, ou depuis votre package manager pour Linux / MacOS. Nous avons utilisé CPython.
 - Cloner ce dépôt
-- Lancer le script avec la commande `python.exe main.py`
+- Lancer le script avec la commande `python.exe main.py` (Windows)
 - Le résultat est à peu près entre 0.8 et 0.85
 
 ## TP3
@@ -28,25 +28,28 @@ Branch
 
 REP_Projet/
  ├─ .github/workflows/
- |    ├─ test.yml
+ |    ├─ associativity.yml
  |    └─ banking.yml          
- ├─ BankingProblem/
+ ├─ banking_problem/
+ |    ├─ banking_algorithm.py
  |    ├─ banking_cli_laucher.py
  |    ├─ banking_cli.py
  |    ├─ banking_template.py.jinja
- |    ├─ generate_banking_0.py
- |    ├─ ......
- |    ├─ generate_banking_2.py
- |    └─ MainBanking.py           
- ├─ AssociativeProblem/
- |    ├─ generated_property_check_0.py
- |    ├─ ......
- |    ├─ generated_property_check_53.py
+ |    ├─ generate_csv.py
+ |    └─ jinja_call.py
+ ├─ associativity/
+ |    ├─ associativity_cli_launcher.py
+ |    ├─ associativity_cli.py
+ |    ├─ associativity_template.py.jinja
+ |    ├─ generate_csv.py
  |    ├─ jinja_call.py
- |    ├─ main_cli_laucher.py
- |    ├─ main_cli.py
- |    ├─ main.py
- |    └─ property_template.py.jinja
+ |    ├─ repository_scanner.py
+ |    ├─ results_associativity.csv
+ |    └─ tp1.py 
  ├─ .gitignore
+ ├─ answer_associativity.py
+ ├─ Dockerfile
+ ├─ nixpkgs-pin.nix
  ├─ README.md
- └─ Result_Analyse.ipynb           
+ ├─ Result_Analyse.ipynb           
+ └─ shell.nix

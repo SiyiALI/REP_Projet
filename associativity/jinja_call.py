@@ -3,7 +3,7 @@ import os
 
 env = Environment(loader=FileSystemLoader("."))
 
-template = env.get_template("property_template.py.jinja")
+template = env.get_template("associativity_property_template.py.jinja")
 
 experiments = []
 for base in [

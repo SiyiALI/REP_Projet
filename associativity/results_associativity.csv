@@ -1,0 +1,163 @@
+repetitions,op1,op2,dtype,dist,seed,rng,result
+1000,(x + y) + z,x + (y + z),float64,uniform01,0,uniform01,0.157
+1000,(x + y) + z,x + (y + z),float64,uniform01,0,uniform_signed,0.157
+1000,(x + y) + z,x + (y + z),float64,uniform01,0,wide,0.157
+1000,(x + y) + z,x + (y + z),float64,uniform01,1,uniform01,0.171
+1000,(x + y) + z,x + (y + z),float64,uniform01,1,uniform_signed,0.171
+1000,(x + y) + z,x + (y + z),float64,uniform01,1,wide,0.171
+1000,(x + y) + z,x + (y + z),float64,uniform_signed,0,uniform01,0.0
+1000,(x + y) + z,x + (y + z),float64,uniform_signed,0,uniform_signed,0.0
+1000,(x + y) + z,x + (y + z),float64,uniform_signed,0,wide,0.0
+1000,(x + y) + z,x + (y + z),float64,uniform_signed,1,uniform01,0.0
+1000,(x + y) + z,x + (y + z),float64,uniform_signed,1,uniform_signed,0.0
+1000,(x + y) + z,x + (y + z),float64,uniform_signed,1,wide,0.0
+1000,(x + y) + z,x + (y + z),float64,wide,0,uniform01,0.0
+1000,(x + y) + z,x + (y + z),float64,wide,0,uniform_signed,0.0
+1000,(x + y) + z,x + (y + z),float64,wide,0,wide,0.0
+1000,(x + y) + z,x + (y + z),float64,wide,1,uniform01,0.003
+1000,(x + y) + z,x + (y + z),float64,wide,1,uniform_signed,0.003
+1000,(x + y) + z,x + (y + z),float64,wide,1,wide,0.003
+1000,(x + y) + z,x + (y + z),float32,uniform01,0,uniform01,0.0
+1000,(x + y) + z,x + (y + z),float32,uniform01,0,uniform_signed,0.0
+1000,(x + y) + z,x + (y + z),float32,uniform01,0,wide,0.0
+1000,(x + y) + z,x + (y + z),float32,uniform01,1,uniform01,0.0
+1000,(x + y) + z,x + (y + z),float32,uniform01,1,uniform_signed,0.0
+1000,(x + y) + z,x + (y + z),float32,uniform01,1,wide,0.0
+1000,(x + y) + z,x + (y + z),float32,uniform_signed,0,uniform01,0.0
+1000,(x + y) + z,x + (y + z),float32,uniform_signed,0,uniform_signed,0.0
+1000,(x + y) + z,x + (y + z),float32,uniform_signed,0,wide,0.0
+1000,(x + y) + z,x + (y + z),float32,uniform_signed,1,uniform01,0.0
+1000,(x + y) + z,x + (y + z),float32,uniform_signed,1,uniform_signed,0.0
+1000,(x + y) + z,x + (y + z),float32,uniform_signed,1,wide,0.0
+1000,(x + y) + z,x + (y + z),float32,wide,0,uniform01,0.208
+1000,(x + y) + z,x + (y + z),float32,wide,0,uniform_signed,0.208
+1000,(x + y) + z,x + (y + z),float32,wide,0,wide,0.208
+1000,(x + y) + z,x + (y + z),float32,wide,1,uniform01,0.218
+1000,(x + y) + z,x + (y + z),float32,wide,1,uniform_signed,0.218
+1000,(x + y) + z,x + (y + z),float32,wide,1,wide,0.218
+1000,(x + y) + z,x + (y + z),decimal50,uniform01,0,uniform01,0.0
+1000,(x + y) + z,x + (y + z),decimal50,uniform01,0,uniform_signed,0.0
+1000,(x + y) + z,x + (y + z),decimal50,uniform01,0,wide,0.0
+1000,(x + y) + z,x + (y + z),decimal50,uniform01,1,uniform01,0.0
+1000,(x + y) + z,x + (y + z),decimal50,uniform01,1,uniform_signed,0.0
+1000,(x + y) + z,x + (y + z),decimal50,uniform01,1,wide,0.0
+1000,(x + y) + z,x + (y + z),decimal50,uniform_signed,0,uniform01,0.0
+1000,(x + y) + z,x + (y + z),decimal50,uniform_signed,0,uniform_signed,0.0
+1000,(x + y) + z,x + (y + z),decimal50,uniform_signed,0,wide,0.0
+1000,(x + y) + z,x + (y + z),decimal50,uniform_signed,1,uniform01,0.0
+1000,(x + y) + z,x + (y + z),decimal50,uniform_signed,1,uniform_signed,0.0
+1000,(x + y) + z,x + (y + z),decimal50,uniform_signed,1,wide,0.0
+1000,(x + y) + z,x + (y + z),decimal50,wide,0,uniform01,0.0
+1000,(x + y) + z,x + (y + z),decimal50,wide,0,uniform_signed,0.0
+1000,(x + y) + z,x + (y + z),decimal50,wide,0,wide,0.0
+1000,(x + y) + z,x + (y + z),decimal50,wide,1,uniform01,0.001
+1000,(x + y) + z,x + (y + z),decimal50,wide,1,uniform_signed,0.001
+1000,(x + y) + z,x + (y + z),decimal50,wide,1,wide,0.001
+10000,x + y,y + x,float64,uniform01,0,uniform01,0.0
+10000,x + y,y + x,float64,uniform01,0,uniform_signed,0.0
+10000,x + y,y + x,float64,uniform01,0,wide,0.0
+10000,x + y,y + x,float64,uniform01,1,uniform01,0.0
+10000,x + y,y + x,float64,uniform01,1,uniform_signed,0.0
+10000,x + y,y + x,float64,uniform01,1,wide,0.0
+10000,x + y,y + x,float64,uniform_signed,0,uniform01,0.0
+10000,x + y,y + x,float64,uniform_signed,0,uniform_signed,0.0
+10000,x + y,y + x,float64,uniform_signed,0,wide,0.0
+10000,x + y,y + x,float64,uniform_signed,1,uniform01,0.0
+10000,x + y,y + x,float64,uniform_signed,1,uniform_signed,0.0
+10000,x + y,y + x,float64,uniform_signed,1,wide,0.0
+10000,x + y,y + x,float64,wide,0,uniform01,0.0
+10000,x + y,y + x,float64,wide,0,uniform_signed,0.0
+10000,x + y,y + x,float64,wide,0,wide,0.0
+10000,x + y,y + x,float64,wide,1,uniform01,0.0
+10000,x + y,y + x,float64,wide,1,uniform_signed,0.0
+10000,x + y,y + x,float64,wide,1,wide,0.0
+10000,x + y,y + x,float32,uniform01,0,uniform01,0.0
+10000,x + y,y + x,float32,uniform01,0,uniform_signed,0.0
+10000,x + y,y + x,float32,uniform01,0,wide,0.0
+10000,x + y,y + x,float32,uniform01,1,uniform01,0.0
+10000,x + y,y + x,float32,uniform01,1,uniform_signed,0.0
+10000,x + y,y + x,float32,uniform01,1,wide,0.0
+10000,x + y,y + x,float32,uniform_signed,0,uniform01,0.0
+10000,x + y,y + x,float32,uniform_signed,0,uniform_signed,0.0
+10000,x + y,y + x,float32,uniform_signed,0,wide,0.0
+10000,x + y,y + x,float32,uniform_signed,1,uniform01,0.0
+10000,x + y,y + x,float32,uniform_signed,1,uniform_signed,0.0
+10000,x + y,y + x,float32,uniform_signed,1,wide,0.0
+10000,x + y,y + x,float32,wide,0,uniform01,0.0908
+10000,x + y,y + x,float32,wide,0,uniform_signed,0.0908
+10000,x + y,y + x,float32,wide,0,wide,0.0908
+10000,x + y,y + x,float32,wide,1,uniform01,0.0914
+10000,x + y,y + x,float32,wide,1,uniform_signed,0.0914
+10000,x + y,y + x,float32,wide,1,wide,0.0914
+10000,x + y,y + x,decimal50,uniform01,0,uniform01,0.0
+10000,x + y,y + x,decimal50,uniform01,0,uniform_signed,0.0
+10000,x + y,y + x,decimal50,uniform01,0,wide,0.0
+10000,x + y,y + x,decimal50,uniform01,1,uniform01,0.0
+10000,x + y,y + x,decimal50,uniform01,1,uniform_signed,0.0
+10000,x + y,y + x,decimal50,uniform01,1,wide,0.0
+10000,x + y,y + x,decimal50,uniform_signed,0,uniform01,0.0
+10000,x + y,y + x,decimal50,uniform_signed,0,uniform_signed,0.0
+10000,x + y,y + x,decimal50,uniform_signed,0,wide,0.0
+10000,x + y,y + x,decimal50,uniform_signed,1,uniform01,0.0
+10000,x + y,y + x,decimal50,uniform_signed,1,uniform_signed,0.0
+10000,x + y,y + x,decimal50,uniform_signed,1,wide,0.0
+10000,x + y,y + x,decimal50,wide,0,uniform01,0.0
+10000,x + y,y + x,decimal50,wide,0,uniform_signed,0.0
+10000,x + y,y + x,decimal50,wide,0,wide,0.0
+10000,x + y,y + x,decimal50,wide,1,uniform01,0.0
+10000,x + y,y + x,decimal50,wide,1,uniform_signed,0.0
+10000,x + y,y + x,decimal50,wide,1,wide,0.0
+5000,(x * y) * z,x * (y * z),float64,uniform01,0,uniform01,0.3444
+5000,(x * y) * z,x * (y * z),float64,uniform01,0,uniform_signed,0.3444
+5000,(x * y) * z,x * (y * z),float64,uniform01,0,wide,0.3444
+5000,(x * y) * z,x * (y * z),float64,uniform01,1,uniform01,0.3476
+5000,(x * y) * z,x * (y * z),float64,uniform01,1,uniform_signed,0.3476
+5000,(x * y) * z,x * (y * z),float64,uniform01,1,wide,0.3476
+5000,(x * y) * z,x * (y * z),float64,uniform_signed,0,uniform01,0.347
+5000,(x * y) * z,x * (y * z),float64,uniform_signed,0,uniform_signed,0.347
+5000,(x * y) * z,x * (y * z),float64,uniform_signed,0,wide,0.347
+5000,(x * y) * z,x * (y * z),float64,uniform_signed,1,uniform01,0.3438
+5000,(x * y) * z,x * (y * z),float64,uniform_signed,1,uniform_signed,0.3438
+5000,(x * y) * z,x * (y * z),float64,uniform_signed,1,wide,0.3438
+5000,(x * y) * z,x * (y * z),float64,wide,0,uniform01,0.3344
+5000,(x * y) * z,x * (y * z),float64,wide,0,uniform_signed,0.3344
+5000,(x * y) * z,x * (y * z),float64,wide,0,wide,0.3344
+5000,(x * y) * z,x * (y * z),float64,wide,1,uniform01,0.3476
+5000,(x * y) * z,x * (y * z),float64,wide,1,uniform_signed,0.3476
+5000,(x * y) * z,x * (y * z),float64,wide,1,wide,0.3476
+5000,(x * y) * z,x * (y * z),float32,uniform01,0,uniform01,0.0
+5000,(x * y) * z,x * (y * z),float32,uniform01,0,uniform_signed,0.0
+5000,(x * y) * z,x * (y * z),float32,uniform01,0,wide,0.0
+5000,(x * y) * z,x * (y * z),float32,uniform01,1,uniform01,0.0
+5000,(x * y) * z,x * (y * z),float32,uniform01,1,uniform_signed,0.0
+5000,(x * y) * z,x * (y * z),float32,uniform01,1,wide,0.0
+5000,(x * y) * z,x * (y * z),float32,uniform_signed,0,uniform01,0.0
+5000,(x * y) * z,x * (y * z),float32,uniform_signed,0,uniform_signed,0.0
+5000,(x * y) * z,x * (y * z),float32,uniform_signed,0,wide,0.0
+5000,(x * y) * z,x * (y * z),float32,uniform_signed,1,uniform01,0.0
+5000,(x * y) * z,x * (y * z),float32,uniform_signed,1,uniform_signed,0.0
+5000,(x * y) * z,x * (y * z),float32,uniform_signed,1,wide,0.0
+5000,(x * y) * z,x * (y * z),float32,wide,0,uniform01,0.6322
+5000,(x * y) * z,x * (y * z),float32,wide,0,uniform_signed,0.6322
+5000,(x * y) * z,x * (y * z),float32,wide,0,wide,0.6322
+5000,(x * y) * z,x * (y * z),float32,wide,1,uniform01,0.63
+5000,(x * y) * z,x * (y * z),float32,wide,1,uniform_signed,0.63
+5000,(x * y) * z,x * (y * z),float32,wide,1,wide,0.63
+5000,(x * y) * z,x * (y * z),decimal50,uniform01,0,uniform01,0.0
+5000,(x * y) * z,x * (y * z),decimal50,uniform01,0,uniform_signed,0.0
+5000,(x * y) * z,x * (y * z),decimal50,uniform01,0,wide,0.0
+5000,(x * y) * z,x * (y * z),decimal50,uniform01,1,uniform01,0.0
+5000,(x * y) * z,x * (y * z),decimal50,uniform01,1,uniform_signed,0.0
+5000,(x * y) * z,x * (y * z),decimal50,uniform01,1,wide,0.0
+5000,(x * y) * z,x * (y * z),decimal50,uniform_signed,0,uniform01,0.0
+5000,(x * y) * z,x * (y * z),decimal50,uniform_signed,0,uniform_signed,0.0
+5000,(x * y) * z,x * (y * z),decimal50,uniform_signed,0,wide,0.0
+5000,(x * y) * z,x * (y * z),decimal50,uniform_signed,1,uniform01,0.0
+5000,(x * y) * z,x * (y * z),decimal50,uniform_signed,1,uniform_signed,0.0
+5000,(x * y) * z,x * (y * z),decimal50,uniform_signed,1,wide,0.0
+5000,(x * y) * z,x * (y * z),decimal50,wide,0,uniform01,0.0
+5000,(x * y) * z,x * (y * z),decimal50,wide,0,uniform_signed,0.0
+5000,(x * y) * z,x * (y * z),decimal50,wide,0,wide,0.0
+5000,(x * y) * z,x * (y * z),decimal50,wide,1,uniform01,0.0
+5000,(x * y) * z,x * (y * z),decimal50,wide,1,uniform_signed,0.0
+5000,(x * y) * z,x * (y * z),decimal50,wide,1,wide,0.0
