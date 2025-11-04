@@ -1,0 +1,20 @@
+name: test-associative-property
+
+on: [push, pull_request]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository checkout
+        uses: actions/checkout@v4
+
+      - name: Generate the CSV
+        run: python3 associativity/generate_csv.py
+
+      - name: Upload associativity CSV artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: results_associativity
+          path: results_associativity.csv
+

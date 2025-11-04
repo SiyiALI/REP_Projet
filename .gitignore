@@ -1,2 +1,4 @@
 __pycache__
 generated*.py
+.ipynb_checkpoints
+venv/

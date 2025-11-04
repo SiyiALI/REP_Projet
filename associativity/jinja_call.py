@@ -5,7 +5,6 @@ env = Environment(loader=FileSystemLoader("."))
 
 template = env.get_template("property_template.py.jinja")
 
-
 experiments = []
 for base in [
     {"repetitions": 1000,  "operation1": "(x + y) + z", "operation2": "x + (y + z)"},
