@@ -22,8 +22,8 @@
 #Branchs
 Branch 
  ├─ main
- ├─ use_float32            
- └─ solution2         
+ ├─ Associativity_solution2  # change in main.py            
+ └─ Banking_solution2        # change in BankingProblem/MainBanking.py   
 
 
 REP_Projet/
