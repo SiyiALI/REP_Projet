@@ -1,22 +1,5 @@
 # Reproducibility
 
-## Installation & execution instructions
-- Download and install Python 3.14 from [this link](https://www.python.org/downloads/release/python-3140/) for Windows, or via your package manager on Linux / macOS. We used CPython.
-- Clone this repository
-- Run the script with `python.exe main.py` (on Windows)
-- The result is approximately between 0.8 and 0.85
-
-## TP3
-
-### Factors that influence the evaluation of mathematical properties on floating-point numbers
-
-- Limited precision of floating-point formats
-- The way floating points are compared (`a == b`, `abs(a-b) <= 0.001`)
-- Use of arbitrary precision / big number libraries
-- CPU / processor architecture
-- Programming language data types
-- The numeric interval selected for the value generation
-
 ## Structure des dossiers
 ```bash
 #Branchs
@@ -36,7 +19,8 @@ REP_Projet/
  |    ├─ banking_cli.py
  |    ├─ banking_template.py.jinja
  |    ├─ generate_csv.py
- |    └─ jinja_call.py
+ |    ├─ jinja_call.py
+ |    └─ results_banking.csv
  ├─ associativity/
  |    ├─ associativity_cli_launcher.py
  |    ├─ associativity_cli.py
